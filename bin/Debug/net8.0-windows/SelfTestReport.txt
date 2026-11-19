@@ -1,0 +1,19 @@
+﻿================================================================================
+   BÁO CÁO KIỂM THỬ TỰ ĐỘNG TOÀN DIỆN HỆ THỐNG ROLLSHOPMANAGER (.NET 8.0)       
+================================================================================
+[PASS] 01. Khởi tạo CSDL SQLite (WAL Mode, Schema v1, Default PIN 123456, 3 cấu hình WR/IMR/BUR)
+[PASS] 02. Phân quyền Operator/Admin, Xác thực PIN SHA-256 + Salt & Đổi PIN
+[PASS] 03. Chặn Operator thực hiện thao tác quản trị (Khai báo / Sửa / Xóa trục)
+[PASS] 04. Khai báo trục mới & Đọc ghi chính xác tuyệt đối kiểu decimal qua Dapper TypeHandler
+[PASS] 05. Ghi nhận 3 ca mài liên tiếp & Tự động điền ĐK trước mài nối đuôi
+[PASS] 06. Sửa ĐK sau mài của ca giữa (Ca 2) -> Tự động nối lại ĐK trước mài của Ca 3 trong Transaction
+[PASS] 07. Xóa ca mài ở giữa (Ca 2) -> Tự động nối ĐK sau mài Ca 1 làm ĐK trước mài Ca 3
+[PASS] 08. Nạp Bộ dữ liệu mẫu Nhà máy Cán thép (DemoDataSeeder) & Kiểm tra toàn vẹn chuỗi
+[PASS] 09. Tính toán Báo cáo Tiêu hao Kỳ & Dự báo Đặt hàng (WR, IMR, BUR)
+[PASS] 10. Xuất Excel .xlsx chuẩn 5 Sheet (ClosedXML) & Kiểm tra công thức COUNTIFS, SUM, Subtraction
+[PASS] 11. Xuất PDF Báo cáo kỳ (A4 Ngang) & PDF Lý lịch trục Roll Passport (A4 Dọc) bằng QuestPDF
+[PASS] 12. Sao lưu (Backup) & Phục hồi (Restore) CSDL trực tuyến bằng SQLite Online Backup API
+[PASS] 13. Khởi tạo Giao diện WinForms (MainForm 6 Tab, Z-Order Docking, RollWearChartDialog)
+--------------------------------------------------------------------------------
+TỔNG KẾT: ĐẠT 13/13 KỊCH BẢN KIỂM THỬ (THẤT BẠI: 0)
+================================================================================
